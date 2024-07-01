@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Projeto 3 - Formulários, Validações e Customizações</title>
+</head>
+<body>
+   <div id="page">
+        <header class="header__container">
+            <h1 class="header__title">Crie e compartilhe seu evento.</h1>
+            <p class="header__text">O primeiro passo, é preencher esse formulário de inscrição.</p>
+        </header>
+
+        <form action="" method="">
+            <section class="form__container__content">
+                <h2>Informações do Evento</h2>
+    
+                <div class="container__element">
+                    <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+                    <input type="text" id="event-title" minlength="8" required>
+                </div>
+
+                <div class="container__element">
+                    <label for="event-link">Link do evento <span>(comece com https://)</span></label>
+                    <input type="url" name="" id="event-link" required>
+                </div>
+
+                <div class="container__element">
+                    <label for="contact">Whatsapp para contato <span>(somente números)</span></label>
+                    <input type="number" name="" id="contact" required>
+                </div>
+
+                <div class="container__element">
+                    <label for="infos">Informações extras</label>
+                    <textarea name="" id="infos" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="container__element">
+                    <label for="categorys">Categoria</label>
+                    <select name="" id="categorys" required>
+                        <option value="">Tipo de evento</option>
+                        <option value="">Evento 1</option>
+                        <option value="">Evento 2</option>
+                        <option value="">Evento 3</option>
+                        <option value="">Evento 4</option>
+                        <option value="">Evento 5</option>
+                    </select>
+                </div>
+            </section>
+        
+            <section class="form__container__content">
+                <h2>Privacidade</h2>
+
+                <div class="container__element">
+                    <label for="administrator-mail">E-mail do administrador <span>(digite um email válido)</span></label>
+                    <input type="email" name="" id="administrator-mail" required>
+                </div>
+
+                <div class="container__element">
+                    <label for="password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+                    <input type="password" name="" id="password" minlength="8" required>
+                </div>
+
+                <div class="container__element check">
+                    <input type="checkbox" name="" id="private-event">
+                    <label for="private-event">Evento privado</label>
+                </div>
+            </section>
+    
+            <section class="form__container__content">
+                <h2>Dia e hora</h2>
+            
+                <section class="container__data">
+                    <div class="container__element data">
+                        <label for="date">Data</label>
+                        <input type="date" name="" id="date" required>
+                    </div>
+
+                    <div class="container__element time">
+                        <label for="first-time">Das</label>
+                        <input type="time" name="" id="first-time" required>
+                    </div>
+
+                    <div class="container__element time">
+                        <label for="last-time">Até</label>
+                        <input type="time" name="" id="last-time" required>
+                    </div>
+                </section>
+            </section>
+
+            <section class="container__button">
+                <button type="submit">Salvar evento</button>
+            </section>
+        </form>
+   </div>
+</body>
+</html>

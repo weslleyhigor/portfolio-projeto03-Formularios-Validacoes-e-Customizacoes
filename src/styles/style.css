@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-family1: "Archivo", sans-serif;
+    --font-family2: "Poppins", sans-serif;
+
+    --color-white: #ffffff;
+    --color-grey1: #D9D9D9;
+    --color-grey2: #E6E6F0;
+    --color-grey3: #C1BCCC;
+    --color-black1: #121214;
+    --color-black2: #4E4958;
+    --color-green: #04D361;
+    --color-blue: #42D3FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+body {
+    height: 100%;
+    padding: 0 0.9375rem;
+    background-color: var(--color-grey1);
+}
+
+body::before {
+    content: '';
+    height: 23rem;
+    width: 100%;
+    background-color: var(--color-black1);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    width: 46rem;
+
+    margin: 0 auto;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    width: 19.9375rem;
+
+    margin: 3.75rem 0 2.5rem 0;
+    gap: 1.25rem;
+}
+
+.header__title {
+    line-height: 2.625rem;
+    font-weight: 700;
+    font-size: 2.25rem;
+    font-family: var(--font-family1);
+    color: var(--color-white);
+}   
+
+.header__text {
+    line-height: 1.625rem;
+    font-size: 1rem;
+    font-family: var(--font-family2);
+    color: var(--color-blue);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 0.5rem;
+    
+    padding-top: 2rem;
+    margin-bottom: 3.125rem;
+
+    background-color: var(--color-white);
+}
+
+.form__container__content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+
+    border: none;
+    font-family: var(--font-family2);
+}
+
+.form__container__content h2 {
+    width: 100%;
+    padding-bottom: 1rem;
+
+    font-family: var(--font-family1);
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+    border-bottom: 1px solid var(--color-grey2);
+}
+
+.container__element {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0.9375rem 0;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.container__element label {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--color-black2); 
+}
+
+.container__element span {
+    margin-left: 0.3125rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: var(--color-grey3);
+}
+
+.container__element input {
+    height: 3.5rem;
+
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: var(--color-black2);
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--color-grey2);
+}
+
+.container__element textarea {
+    resize: none;
+    font-family: var(--font-family2);
+    height: 5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--color-black2);
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--color-grey2);
+}
+
+.container__element select {
+    appearance: none;
+    padding: 0 1rem;
+    height: 3.5rem;
+    font-size: 0 1rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--color-grey2);
+    color: var(--color-grey3);
+    background-color: var(--color-white);
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 1.5rem;
+    gap: 0.9375rem;
+}
+
+
+.container__data {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.data {
+    width: 100%;
+}
+
+.time {
+    width: 100%;
+}
+
+
+.container__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 8.5rem;
+    padding: 0 0.625rem;
+    margin: 0;
+
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    background-color: var(--color-grey2);
+}
+
+.container__button button {
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--color-green);
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: var(--color-green);
+}
+
+.container__button button {
+    cursor: pointer;
+}
+
+@media(min-width: 550px) {
+    body {
+        height: 100vh;
+    }
+
+    form {
+        padding-top: 2rem;
+    }
+
+    .form__container__content  {
+        padding: 2rem 4rem;
+    }
+
+    .container__element textarea {
+        height: 10.5rem;
+    }
+
+    .container__data {
+        display: flex;
+        flex-direction: row; 
+    }
+    
+    .data {
+        width: 50%;
+    }
+
+    .time {
+        width: 25%;
+    }
+
+    .container__button {
+        padding: 0 4rem;
+    }
+}
